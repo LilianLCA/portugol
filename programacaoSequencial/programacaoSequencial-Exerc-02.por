@@ -3,25 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro total_dias = 12072
-		inteiro anos, meses, dias, res
+		inteiro reposta
+		inteiro anos, meses, dias, sobra
 
 		escreva("Entre com o total de dias: ")
-		leia(total_dias) 
+		leia(reposta) 
 
-		escreva("Entre com os anos: ")
-		leia(anos) 
+		anos=reposta/365
+		
+		sobra=reposta%365
+		
+		meses=sobra/30
 
-		escreva("Entre com os meses: ")
-		leia(meses) 
-
-		escreva("Entre com os dias: ")
-		leia(dias) 
-
-		res= (total_dias / 365) 
-		res= (anos % 365)
-		res= (meses / 30)
-		res= (dias % 30)
+		dias=sobra%30
+		
 		escreva("A idade expressa de uma pessoa é: " + anos + "anos\n" + meses + "meses e\n" + dias + "dias\n")
 		
 	}
@@ -31,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 492; 
+ * @POSICAO-CURSOR = 60; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

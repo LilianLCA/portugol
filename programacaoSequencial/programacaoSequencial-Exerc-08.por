@@ -1,25 +1,18 @@
 programa
 {
-	inclua biblioteca Teclado
 	
 	funcao inicio()
 	{
-		inteiro anos, meses, dias, res
+		escreva("Olá Mundo\n")
 		
-		escreva("Entre com os anos:")
-		leia(anos)
 		
-		escreva("Entre com os meses:")
-		leia(meses)
-				
-		escreva("Entre com os dias:")
-		leia(dias)
-
-		res= (anos * 365) + (meses * 30) + dias
-		
-		escreva("A idade da pessoa expressa em dias é: ", res) 		
-		
-	
+		real cf, dist, imp, cc
+		escreva("Entre com o valor de Fábrica do veículo: ")
+		leia (cf)
+		dist=cf*0.28
+		imp=cf*0.45
+		cc=cf+dist+imp
+		escreva("\nO valor de venda do veículo é: ", cc)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 283; 
+ * @POSICAO-CURSOR = 257; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
